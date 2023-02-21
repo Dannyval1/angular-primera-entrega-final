@@ -1,4 +1,5 @@
 <h1 appHeadingStyles>Informacion general de nuestros Alumnos</h1>
+<button class="button-add-row" mat-button (click)="abrirModalParaAgregar()">Agregar alumno</button>
 <table class="w-100" mat-table [dataSource]="dataSource">
   <!--Columna de nombre-->
   <ng-container matColumnDef="nombre">
@@ -45,7 +46,7 @@
         <button mat-icon-button color="primary" (click)="abrirModal(element)">
             <mat-icon>edit</mat-icon>
         </button>
-        <button mat-icon-button color="warn">
+        <button mat-icon-button color="warn" (click)="deleteItem(element)">
             <mat-icon>delete</mat-icon>
         </button>
     </td>

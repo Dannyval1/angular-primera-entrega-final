@@ -12,6 +12,7 @@ import { EditarAlumnoComponent } from './components/editar-alumno/editar-alumno.
 import { ReactiveFormsModule } from '@angular/forms';
 import { NombreCompletoPipe } from './pipes/nombre-completo.pipe';
 import { HeadingStylesDirective } from './directives/heading-styles.directive';
+import { AgregarAlumnoComponent } from './components/agregar-alumno/agregar-alumno.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HeadingStylesDirective } from './directives/heading-styles.directive';
     EditarAlumnoComponent,
     NombreCompletoPipe,
     HeadingStylesDirective,
+    AgregarAlumnoComponent,
   ],
   imports: [
     BrowserModule,

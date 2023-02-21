@@ -1,7 +1,7 @@
-<h1 mat-dialog-title>Editar Alumno</h1>
+<h1 mat-dialog-title>Agregar Alumno</h1>
 
 <div mat-dialog-content>
-  <form [formGroup]="formulario">
+  <form [formGroup]="formularioAdd">
     <div class="row">
       <div class="col-12">
         <input
@@ -47,6 +47,6 @@
   </form>
 </div>
 <div mat-dialog-actions>
-  <button mat-button>Cancelar</button>
-  <button mat-raised-button (click)="save()">Guardar</button>
+  <button mat-button>Cerrar</button>
+  <button mat-raised-button (click)="saveNew()">Agregar</button>
 </div>

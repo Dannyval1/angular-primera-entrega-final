@@ -21,7 +21,15 @@ export class EditarAlumnoComponent {
       edad: new FormControl(data.edad),
       curso: new FormControl(data.curso),
       profesor: new FormControl(data.profesor),
-    })
+    });
+  }
+
+  save() {
+    this.dialogRef.close(this.formulario.value);
+  }
+
+  close() {
+    this.dialogRef.close();
   }
 
   ngOnInit(): void {}
